@@ -1,0 +1,32 @@
+{
+  "name": "dir-array",
+  "version": "1.0.0",
+  "description": "Present directory structure as an Array",
+  "main": "src/dir-array.js",
+  "scripts": {
+    "cov": "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec test/**.spec.js",
+    "test": "mocha test/**.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumkin/dir-array.git"
+  },
+  "keywords": [
+    "dir",
+    "fs",
+    "directories",
+    "array",
+    "list",
+    "dir"
+  ],
+  "author": "rumkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rumkin/dir-array/issues"
+  },
+  "homepage": "https://github.com/rumkin/dir-array#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3"
+  }
+}
