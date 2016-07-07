@@ -14,6 +14,15 @@ class DirArray extends Array {
         if (fs.existsSync(this[DIR])) {
             this.push(...fs.readdirSync(this[DIR]));
         }
+
+        if (this.constructor !== DirArray) {
+          Object.getOwnPropertyNames(DirArray.prototype)
+            .forEach(key => Object.defineProperty(this, key, {
+              configurable: false,
+              enumerable: false,
+              value: DirArray.prototype[key].bind(this)
+            }));
+        }
     }
 
     // Create Directory array from relative path
