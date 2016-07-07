@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const Symbol = require('es6-symbol');
 const DIR = Symbol('DirArray.Dir');
 
 class DirArray extends Array {
